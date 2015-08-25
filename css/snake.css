@@ -1,0 +1,77 @@
+body {
+  background: #2dbba6;
+}
+
+header {
+  width: 100%;
+}
+
+.snake-header {
+  text-align: center;
+}
+
+main {
+  width: 210px;
+  margin: 0 auto;
+}
+
+.board {
+  float: left;
+  display: block;
+  position: relative;
+  border: 5px solid #000;
+  width: 210px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.game-score {
+  float: left;
+  display: block;
+  right: 0;
+  position: absolute;
+}
+.game-level {
+  float: left;
+  display: block;
+  left: 0;
+}
+
+.state {
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.square {
+  float: left;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+}
+
+.snake {
+  background: rgb(26, 126, 18);
+  border-radius: 5px;
+}
+
+.apple {
+  background: rgb(247, 5, 45);
+  border-radius: 5px;
+}
+
+.new-game {
+  float: left;
+  display: block;
+  margin-top: 20px;
+  margin-left: 35%;
+}
+
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
