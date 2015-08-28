@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="../css/snake.css">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="../js/snake.js"></script>
+    <script src="../js/snake-view.js"></script>
+
+    <script>
+      $(function () {
+        $board = $('.board');
+        var view = new SnakeGame.View($board);
+      });
+    </script>
+    <header>
+      <img src="http://res.cloudinary.com/dypfv4yqq/image/upload/v1440733224/cs1_kfwnyr.gif" alt="" id="logo"/>
+    </header>
+    <main class="state group">
+      <div class="game-state group">
+        <h2 class="game-level"></h2>
+        <h2 class="game-score"></h2>
+      </div>
+      <figure class="board group"></figure>
+      <div class="new-game group">
+        <img src="http://res.cloudinary.com/dypfv4yqq/image/upload/v1440733418/start_xbme07.gif" alt="" />
+      </div>
+      <div id="info">Use 'A', 'S', 'D', 'W' to control the snake!</div>
+    </main>
+  </body>
+</html>
