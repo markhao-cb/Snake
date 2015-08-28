@@ -21,7 +21,7 @@
   //Snake Class
   var Snake = SnakeGame.Snake = function(game){
     this.game = game;
-    this.segments = [[0,0], [0,1], [0,2], [0,3]];
+    this.segments = [[0,0], [0,1], [0,2], [0,3], [0,4], [0,5]];
     this.direction = "E";
     this.direct = this.turn();
   };
@@ -42,7 +42,7 @@
 
   Snake.prototype.ateApple = function() {
     this.game.createNewApple();
-    if (this.game.speed > 100) {
+    if (this.game.speed > 50) {
       this.game.level += 1;
       this.game.speed -= 10;
     }
@@ -96,7 +96,7 @@
     this.snake = this.board.snake;
     this.score = 0;
     this.level = 0;
-    this.speed = 200;
+    this.speed = 150;
     this.createNewApple();
   };
 
@@ -112,7 +112,7 @@
 
     var pos = null;
     while (pos === null || !this.isValidPos(pos)) {
-      pos = [Util.getRandomNum(9),Util.getRandomNum(9)];
+      pos = [Util.getRandomNum(19),Util.getRandomNum(39)];
     }
     return pos;
   };
@@ -146,8 +146,8 @@
     var head = segs[segs.length - 1];
     // var newHead = [head[0] + vec[0], head[1] + vec[1]];
     if (!this.hitItself(head) ||
-        head[0] > 9 || head[0] < 0 ||
-        head[1] > 9 || head[1] < 0) {
+        head[0] > 19 || head[0] < 0 ||
+        head[1] > 39 || head[1] < 0) {
       return true;
     } else {
       return false;
