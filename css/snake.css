@@ -97,3 +97,12 @@ main {
   display: block;
   clear: both;
 }
+
+#info {
+  position: fixed;
+  top: 80%;
+  left: 30%;
+  font-size: xx-large;
+  font-family: fantasy;
+  color: coral;
+}
