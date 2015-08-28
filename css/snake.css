@@ -1,9 +1,10 @@
 body {
-  background: #2dbba6;
+  background: #eee;
 }
 
 header {
   width: 100%;
+  text-align: center;
 }
 
 .snake-header {
@@ -11,19 +12,20 @@ header {
 }
 
 main {
-  width: 210px;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 
 .board {
   float: left;
   display: block;
-  position: relative;
-  border: 5px solid #000;
-  width: 210px;
+  position: fixed;
+  border: 5px solid rgb(22, 138, 245);
+  width: 810px;
   box-sizing: border-box;
   margin: 0 auto;
-  background: #ccc;
+  background: #000;
+  left: 18%;
 }
 
 .game-score {
@@ -49,17 +51,17 @@ main {
   box-sizing: border-box;
   width: 20px;
   height: 20px;
-  background: #ccc;
 }
 
 .snake {
-  background: rgb(26, 126, 18);
-  border-radius: 5px;
+  background-image: url("http://res.cloudinary.com/dypfv4yqq/image/upload/v1440731928/Square-Plate-285B-full_poeioj.jpg");
+  background-position: center;
+  border-radius: 40%;
 }
 
 .apple {
   background: rgb(247, 5, 45);
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .new-game {

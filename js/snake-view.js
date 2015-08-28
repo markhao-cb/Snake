@@ -25,8 +25,8 @@
 
   View.prototype.setupBoard = function () {
     var $board = this.$board;
-     for (var i = 0; i < 10; i++) {
-       for (var j = 0; j < 10; j++) {
+     for (var i = 0; i < 20; i++) {
+       for (var j = 0; j < 40; j++) {
          var $square = $('<div data-pos = "' + JSON.stringify([i,j]) +'"></div>')
                       .addClass('square');
          $board.append($square);
