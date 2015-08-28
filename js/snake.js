@@ -42,7 +42,7 @@
 
   Snake.prototype.ateApple = function() {
     this.game.createNewApple();
-    if (this.game.speed > 50) {
+    if (this.game.speed > 80) {
       this.game.level += 1;
       this.game.speed -= 10;
     }
@@ -96,7 +96,7 @@
     this.snake = this.board.snake;
     this.score = 0;
     this.level = 0;
-    this.speed = 150;
+    this.speed = 180;
     this.createNewApple();
   };
 
