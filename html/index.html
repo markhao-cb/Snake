@@ -6,6 +6,25 @@
     <link rel="stylesheet" href="../css/snake.css">
   </head>
   <body>
+    <div id="bg">
+      <img src="http://res.cloudinary.com/dypfv4yqq/image/upload/v1441002336/spring_drawing_cartoon_building_grass_28110_1600x1200_lnveqo.jpg" alt="">
+    </div>
+    <header>
+      <img src="http://res.cloudinary.com/dypfv4yqq/image/upload/v1440733224/cs1_kfwnyr.gif" alt="" id="logo"/>
+    </header>
+    <main class="state group">
+      <div class="game-state group">
+        <h2 class="game-level"></h2>
+        <h2 class="game-score"></h2>
+      </div>
+      <div id="game-board" class="group">
+        <div class="board group"></div>
+        <div class="new-game group">
+          <img src="http://res.cloudinary.com/dypfv4yqq/image/upload/v1440733418/start_xbme07.gif" alt="" />
+        </div>
+        <div id="info">Use 'A', 'S', 'D', 'W' to control the snake!</div>
+      </div>
+    </main>
     <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
     <script src="../js/snake.js"></script>
     <script src="../js/snake-view.js"></script>
@@ -16,19 +35,5 @@
         var view = new SnakeGame.View($board);
       });
     </script>
-    <header>
-      <img src="http://res.cloudinary.com/dypfv4yqq/image/upload/v1440733224/cs1_kfwnyr.gif" alt="" id="logo"/>
-    </header>
-    <main class="state group">
-      <div class="game-state group">
-        <h2 class="game-level"></h2>
-        <h2 class="game-score"></h2>
-      </div>
-      <figure class="board group"></figure>
-      <div class="new-game group">
-        <img src="http://res.cloudinary.com/dypfv4yqq/image/upload/v1440733418/start_xbme07.gif" alt="" />
-      </div>
-      <div id="info">Use 'A', 'S', 'D', 'W' to control the snake!</div>
-    </main>
   </body>
 </html>

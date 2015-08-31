@@ -18,6 +18,7 @@
   View.prototype.newGame = function(event) {
     $(".new-game").remove();
     $(".over").remove();
+    $("#info").remove();
     this.game = new SnakeGame.Game();
     this.direction = "E";
     this.snake = this.game.snake;
@@ -101,12 +102,12 @@
       if(view.game.isOver()) {
         var $overView = $("<div>");
         $overView.addClass('over');
-        var $gameOver = $("<img>");
+        var $gameOver = $("<h3>");
         $gameOver.addClass('gameover');
-        $gameOver.attr('src', 'http://res.cloudinary.com/dypfv4yqq/image/upload/v1440738018/go_aquqnk.gif');
-        var $restart = $("<img>");
+        $gameOver.text('Game Over!');
+        var $restart = $("<h3>");
         $restart.addClass('restart');
-        $restart.attr('src', 'http://res.cloudinary.com/dypfv4yqq/image/upload/v1440740530/rs_qorhhn.gif');
+        $restart.text('Restart');
         $overView.append($gameOver).append($restart);
         $('body').append($overView);
         $(".restart").on("click", view.newGame.bind(view));

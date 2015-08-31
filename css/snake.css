@@ -1,5 +1,25 @@
 body {
-  background: #eee;
+  background-image: url("http://res.cloudinary.com/dypfv4yqq/image/upload/v1441002336/spring_drawing_cartoon_building_grass_28110_1600x1200_lnveqo.jpg");
+  background-repeat: no-repeat;
+}
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -10;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
 }
 
 header {
@@ -16,16 +36,20 @@ main {
   text-align: center;
 }
 
+#game-board {
+  width: 810px;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .board {
-  float: left;
-  display: block;
   position: fixed;
   border: 5px solid rgb(22, 138, 245);
   width: 810px;
   box-sizing: border-box;
-  margin: 0 auto;
   background: #000;
-  left: 18%;
+
 }
 
 .game-score {
@@ -65,23 +89,31 @@ main {
 }
 
 .new-game {
-  position: absolute;
-  left: 43%;
-  bottom: -600%;
+  position: fixed;
+  left: 42%;
   z-index: 10;
-  border: 1px solid rgb(236, 112, 11);
+  border: 3px solid rgb(236, 112, 11);
   border-radius: 10px;
   width: 15%;
   margin: 0 auto;
+  top: 300px;
 }
 
 .over {
   z-index: 20;
-  position: fixed;
+  position: absolute;
   width: auto;
   margin: 0 auto;
-  padding-top: 7%;
-  left: 40%;
+  top: 210px;
+  left: 45%;
+  color: rgb(255, 115, 0);
+  font-size: 24px;
+  text-align: center;
+}
+
+.gameover {
+  font-size: 36px;
+  font-family: fantasy;
 }
 
 .restart {
@@ -100,9 +132,9 @@ main {
 
 #info {
   position: fixed;
-  top: 80%;
-  left: 30%;
+  top: 440px;
   font-size: xx-large;
   font-family: fantasy;
   color: coral;
+  width: 810px;
 }
