@@ -2,7 +2,7 @@
 
 Classic Snake game
 
-· Used Global namespace
-· Object-oriented JavaScript
-· Used jQuery to handle events
-· Custom CSS
+1. Used Global namespace
+2. Object-oriented JavaScript
+3. Used jQuery to handle events
+4. Custom CSS
