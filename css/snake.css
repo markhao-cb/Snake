@@ -24,7 +24,14 @@ body {
 
 header {
   width: 100%;
+  position: fixed;
   text-align: center;
+}
+
+.game-state{
+  position: fixed;
+  padding-top: 5%;
+  width: 100%;
 }
 
 .snake-header {
@@ -49,7 +56,7 @@ main {
   width: 810px;
   box-sizing: border-box;
   background: #000;
-
+  top: 22%;
 }
 
 .game-score {
@@ -101,7 +108,7 @@ main {
 
 .over {
   z-index: 20;
-  position: absolute;
+  position: fixed;
   width: auto;
   margin: 0 auto;
   top: 210px;
